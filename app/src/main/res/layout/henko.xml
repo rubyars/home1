@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#313435"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
     <ImageView
@@ -17,13 +17,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hedda" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="変更が完了しました"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0C782B"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-53dp">
 
         <ImageButton
             android:id="@+id/imageButton"
