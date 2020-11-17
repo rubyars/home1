@@ -8,6 +8,20 @@
     tools:context=".MainActivity">
 
     <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="165dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/face" />
+
+    <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -21,6 +35,19 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/tui" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="258dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="130dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kaisi" />
 
     <TextView
         android:id="@+id/textView13"
@@ -46,20 +73,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="165dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginBottom="100dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/face" />
-
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
@@ -84,19 +97,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="258dp"
-        android:layout_height="61dp"
-        android:layout_marginBottom="130dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kaisi" />
 
     <ImageView
         android:id="@+id/imageView"
