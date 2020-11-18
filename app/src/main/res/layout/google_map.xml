@@ -10,12 +10,12 @@
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="140dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MapsActivity" />
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:context=".MapsActivity"
+        tools:layout_editor_absoluteX="1dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -25,13 +25,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hedda" />
+        android:src="@drawable/hedda" />
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -40,7 +43,7 @@
             android:layout_weight="1"
             android:background="#4DB6AC"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/homrhome" />
+            android:src="@drawable/homrhome" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -49,7 +52,7 @@
             android:layout_weight="1"
             android:background="#4DB6AC"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/huttahuttatata" />
+            android:src="@drawable/huttahuttatata" />
 
     </LinearLayout>
 
