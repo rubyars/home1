@@ -7,43 +7,42 @@
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="227dp"
-        android:layout_height="117dp"
-        android:text="現在位置"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/map" />
-
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:context=".MapsActivity"
-        tools:layout_editor_absoluteX="206dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="90dp"
         android:scaleType="fitXY"
-        android:src="@drawable/hedda"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hedda" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="変更が完了しました"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0C782B"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-53dp">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -52,7 +51,7 @@
             android:layout_weight="1"
             android:background="#4DB6AC"
             android:scaleType="fitXY"
-            android:src="@drawable/homrhome" />
+            app:srcCompat="@drawable/homrhome" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -61,7 +60,7 @@
             android:layout_weight="1"
             android:background="#4DB6AC"
             android:scaleType="fitXY"
-            android:src="@drawable/huttahuttatata" />
+            app:srcCompat="@drawable/huttahuttatata" />
 
     </LinearLayout>
 
