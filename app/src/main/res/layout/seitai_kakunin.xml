@@ -280,7 +280,7 @@
             android:layout_weight="1"
             android:background="#4DB6AC"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/homrhome" />
+            android:src="@drawable/homrhome" />
 
         <ImageButton
             android:id="@+id/imageButton2"
