@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hedda" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="#4DB6AC"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/homrhome" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="#4DB6AC"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/huttahuttatata" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:text="新しい予定"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:text="キャンセル"
+        android:textColor="#E1E91E2F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="64dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_weight="1"
+        android:background="#0000"
+        android:text="追加"
+        android:textColor="#0066CC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
+
+    <View
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <View
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="#0000"
+        android:ems="14"
+        android:hint="予定"
+        android:inputType="textShortMessage|textLongMessage|textMultiLine|text"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4" />
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="#0000"
+        android:ems="14"
+        android:hint="場所"
+        android:inputType="textShortMessage|textLongMessage|textMultiLine|text"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName5" />
+
+    <View
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <View
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <View
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+    <View
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_marginBottom="65dp"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:text="開始"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:text="終了"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName7"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName7" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:text=""
+        android:textColor="#E1E91E2F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName6" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName7"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName7"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName7" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:background="#FFF2CC"
+        android:freezesText="false"
+        android:text="通知"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName8"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName8" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:checked="false"
+        android:showText="true"
+        android:text=""
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName8"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName8"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/edit_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#0000"
+        android:ems="20"
+        android:hint="メモ"
+        android:inputType="textShortMessage|textLongMessage|textMultiLine|text"
+        android:maxLength="105"
+        android:maxLines="5"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
