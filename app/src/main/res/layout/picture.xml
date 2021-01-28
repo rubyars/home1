@@ -7,6 +7,30 @@
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/syasin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout11"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/syasin" />
+
+    <ImageButton
+        android:id="@+id/camera_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#0000"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout11"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/kamera" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -18,6 +42,7 @@
         app:srcCompat="@drawable/hedda" />
 
     <LinearLayout
+        android:id="@+id/linearLayout11"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center"
@@ -42,5 +67,35 @@
             app:srcCompat="@drawable/huttahuttatata" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:text="アルバム"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="@+id/syasin_button"
+        app:layout_constraintStart_toStartOf="@+id/syasin_button"
+        app:layout_constraintTop_toBottomOf="@+id/syasin_button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:text="写真"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="@+id/camera_button2"
+        app:layout_constraintStart_toStartOf="@+id/camera_button2"
+        app:layout_constraintTop_toBottomOf="@+id/camera_button2"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

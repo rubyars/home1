@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Calender">
+        </activity>
+        <activity
+            android:name=".Calender2">
+        </activity>
+        <activity
+            android:name=".Memo">
+        </activity>
+        <activity
+            android:name=".Camera">
+        </activity>
+        <activity
+            android:name=".Sleep_time">
+        </activity>
+        <activity
+            android:name=".Walk_counter">
+        </activity>
+        <activity
+            android:name=".Tyoubo">
+        </activity>
+        <activity
+            android:name=".Google_map">
+        </activity>
     </application>
 
 </manifest>
