@@ -7,6 +7,16 @@
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/hosuu" />
+
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="wrap_content"
@@ -21,10 +31,22 @@
         app:srcCompat="@drawable/yazirusi3" />
 
     <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="3251 歩"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="420dp"
         android:text="チェックをつけてSNSに投稿"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,7 +57,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="320dp"
         android:text="身長と体重を登録して消費カロリーを表示させる"
         android:textColor="#171717"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,24 +81,11 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:srcCompat="@drawable/tui" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="171dp"
-        android:layout_height="143dp"
-        android:layout_marginBottom="800dp"
-        android:layout_weight="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:srcCompat="@drawable/hosuu" />
-
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="380dp"
         android:text="前回の記録"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton6"
@@ -105,7 +114,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="370dp"
         android:text="今回の記録"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBox2"
