@@ -8,28 +8,28 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Memo extends AppCompatActivity {
+public class Yuzazyouhou extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.memo1);
+        setContentView(R.layout.zyouhou);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.hozonmemo_button);
-        Button btn2 =(Button)findViewById(R.id.sinki_button2);
+        Button btn = (Button)findViewById(R.id.button);
+        Button btn2 =(Button)findViewById(R.id.button1);
 
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               setContentView(R.layout.memo3);
+               setContentView(R.layout.settei);
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.memo2);
+                setContentView(R.layout.zyouhou2);
             }
         });
     }

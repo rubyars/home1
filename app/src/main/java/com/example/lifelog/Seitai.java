@@ -8,24 +8,25 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Camera extends AppCompatActivity {
+public class Seitai extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.picture);
-
-        ImageButton btn = (ImageButton)findViewById(R.id.syasin_button);
-
+        setContentView(R.layout.seitai_kakunin);
+        ImageButton btn = (ImageButton)findViewById(R.id.hensyu_button);
 
         btn.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View s) {
-                Intent intent = new Intent(Camera.this,
-                        Camera2.class );
+            public void onClick(View v) {
+                Intent intent = new Intent(Seitai.this,
+                        Seitai2.class );
                 startActivity(intent);
             }
         });
+
+
     }
 }
 

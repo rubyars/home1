@@ -8,22 +8,19 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class Camera extends AppCompatActivity {
+public class Camera2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.picture);
+        setContentView(R.layout.syasin_album);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.syasin_button);
-
+        ImageButton btn = (ImageButton)findViewById(R.id.syasin_button2);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View s) {
-                Intent intent = new Intent(Camera.this,
-                        Camera2.class );
-                startActivity(intent);
+            public void onClick(View v) {
+                setContentView(R.layout.picture2);
             }
         });
     }

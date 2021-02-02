@@ -173,7 +173,7 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/hosuu" />
+            app:srcCompat="@drawable/hosuukeiii" />
 
     </LinearLayout>
 

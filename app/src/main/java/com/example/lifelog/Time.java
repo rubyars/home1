@@ -15,7 +15,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Locale;
 
-public class time extends AppCompatActivity {
+public class Time extends AppCompatActivity {
 
     private Timer timer;
     // 'Handler()' is deprecated as of API 30: Android 11.0 (R)
@@ -31,7 +31,7 @@ public class time extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sumaho_time);
+        setContentView(R.layout.sumaho_time99);
 
         delay = 0;
         period = 100;

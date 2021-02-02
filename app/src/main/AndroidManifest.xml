@@ -40,6 +40,39 @@
         <activity
             android:name=".Google_map">
         </activity>
+        <activity
+            android:name=".Time">
+        </activity>
+        <activity
+            android:name=".Camera2">
+        </activity>
+        <activity
+            android:name=".Seitai">
+        </activity>
+        <activity
+            android:name=".Seitai2">
+        </activity>
+        <activity
+            android:name=".Yuzazyouhou">
+        </activity>
+        <activity
+            android:name=".Osirase">
+        </activity>
+        <activity
+            android:name=".Sample">
+        </activity>
+        <activity
+            android:name=".Help">
+        </activity>
+        <activity
+            android:name=".Toiawase">
+        </activity>
+        <activity
+            android:name=".Tuuti">
+        </activity>
+        <activity
+            android:name=".Kekka">
+        </activity>
     </application>
 
 </manifest>

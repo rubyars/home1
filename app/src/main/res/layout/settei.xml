@@ -47,11 +47,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hedda" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:isScrollContainer="false"
-        android:id="@+id/scrollView">
 
     <LinearLayout
         android:id="@+id/linearLayout9"
@@ -72,6 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.50">
+
 
             <Button
                 android:id="@+id/Button"
@@ -204,6 +200,8 @@
 
     </LinearLayout>
 
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -254,6 +252,6 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout9"
         android:layout_marginEnd="10dp" />
 
-    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

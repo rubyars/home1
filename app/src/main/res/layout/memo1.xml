@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sinki_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:background="#FFF2CC"
         android:freezesText="false"
-        android:text="メモ"
+        android:text="お気に入りのカフェ"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/hozonmemo_button"

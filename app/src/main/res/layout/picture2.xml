@@ -66,7 +66,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:background="#0000"
-        android:text="≺カメラ"
+        android:text="≺アルバム"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
@@ -107,27 +107,27 @@
         android:layout_weight="1"
         android:background="#0000"
         android:ems="30"
-        android:hint="タイトル"
         android:inputType="textShortMessage|textLongMessage|textMultiLine|text"
         android:maxLength="10"
         android:maxLines="1"
         android:paddingLeft="20dp"
+        android:text="富士山と紅葉"
         android:textIsSelectable="false"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout12"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="410dp"
+        android:layout_height="211dp"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/run" />
+        app:srcCompat="@drawable/kesiki" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -147,7 +147,7 @@
         android:layout_weight="1"
         android:background="#0000"
         android:ems="20"
-        android:hint="コメント"
+        android:text="去年、静岡に行った際にとても美しい景色が見えたので思わずパシャリ。また行きたいなぁと感じられました"
         android:inputType="textShortMessage|textLongMessage|textMultiLine|text"
         android:maxLength="150"
         android:maxLines="7"
