@@ -18,6 +18,13 @@
            部下　   澤村冴京
 第２条【本規約について】
 １．本規約は、本サービスをご利用いただく際の基本条件を規定するものです。</string>
+
+    <string name="menu_item1">アイテム1</string>
+    <string name="menu_item2">アイテム2</string>
+    <string name="menu_item3">アイテム3</string>
+    <string name="menu_item4">アイテム4</string>
+    <string name="menu_item5">アイテム5</string>
+    <string name="menu_item6">アイテム6</string>
 </resources>
 
 

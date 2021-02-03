@@ -83,11 +83,11 @@
         android:layout_marginLeft="10dp"
         android:text="データ漏洩などの心配はありませんか？"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        tools:ignore="HardcodedText"/>
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -108,11 +108,11 @@
         android:layout_marginLeft="10dp"
         android:text="漏洩することないよう努力不断のします"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        tools:ignore="HardcodedText"/>
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -134,11 +134,11 @@
         android:layout_marginLeft="10dp"
         android:text="デザインを変えることはできますか？"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView6"
-        tools:ignore="HardcodedText"/>
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -160,7 +160,7 @@
         android:layout_marginLeft="10dp"
         android:text="データが消えたらどうしたらいいですか？"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView8"
@@ -186,7 +186,7 @@
         android:layout_marginLeft="10dp"
         android:text="SNSへの投稿の方法が分かりません"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView10"

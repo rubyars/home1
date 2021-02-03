@@ -15,7 +15,7 @@ public class Camera2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.syasin_album);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.syasin_button2);
+        ImageButton btn = (ImageButton)findViewById(R.id.syasin_button);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

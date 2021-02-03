@@ -73,6 +73,9 @@
         <activity
             android:name=".Kekka">
         </activity>
+        <activity
+            android:name=".Kiyaku">
+        </activity>
     </application>
 
 </manifest>

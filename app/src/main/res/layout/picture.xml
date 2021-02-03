@@ -1,101 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context=".MainActivity">
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout tools:context=".MainActivity" android:background="@drawable/back" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageButton
-        android:id="@+id/syasin_button"
-        android:layout_width="wrap_content"
-        android:layout_height="72dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:background="#0000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout11"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/syasin" />
+    <ImageButton android:background="#0000" android:layout_height="72dp" android:layout_width="wrap_content" app:srcCompat="@drawable/syasin" app:layout_constraintTop_toTopOf="@+id/imageView" app:layout_constraintStart_toStartOf="@+id/linearLayout11" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginLeft="40dp" android:layout_marginStart="40dp" android:id="@+id/syasin_button"/>
 
-    <ImageButton
-        android:id="@+id/camera_button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:background="#0000"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout11"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout11"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/kamera" />
+    <ImageButton android:background="#0000" android:layout_height="wrap_content" android:layout_width="wrap_content" app:srcCompat="@drawable/kamera" app:layout_constraintTop_toTopOf="@+id/imageView" app:layout_constraintBottom_toBottomOf="@+id/linearLayout11" android:id="@+id/camera_button2" app:layout_constraintEnd_toEndOf="@+id/linearLayout11" android:layout_marginRight="40dp" android:layout_marginEnd="40dp"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="90dp"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hedda" />
+    <ImageView android:layout_height="90dp" android:layout_width="wrap_content" app:srcCompat="@drawable/hedda" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent" android:scaleType="fitXY"/>
 
-    <LinearLayout
-        android:id="@+id/linearLayout11"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom|center"
-        android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_weight="1"
-            android:background="#4DB6AC"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/homrhome" />
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/linearLayout11" android:orientation="horizontal" android:gravity="bottom|center">
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="0dp"
-            android:layout_height="55dp"
-            android:layout_weight="1"
-            android:background="#4DB6AC"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/huttahuttatata" />
+    <ImageButton android:background="#4DB6AC" android:layout_height="55dp" android:layout_width="0dp" app:srcCompat="@drawable/homrhome" android:id="@+id/imageButton" android:scaleType="fitXY" android:layout_weight="1"/>
 
-    </LinearLayout>
+    <ImageButton android:background="#4DB6AC" android:layout_height="55dp" android:layout_width="0dp" app:srcCompat="@drawable/huttahuttatata" android:id="@+id/imageButton2" android:scaleType="fitXY" android:layout_weight="1"/>
 
-    <TextView
-        android:id="@+id/Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#0000"
-        android:text="アルバム"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="20sp"
-        app:fontFamily="serif"
-        app:layout_constraintEnd_toEndOf="@+id/syasin_button"
-        app:layout_constraintStart_toStartOf="@+id/syasin_button"
-        app:layout_constraintTop_toBottomOf="@+id/syasin_button"
-        tools:ignore="MissingConstraints" />
+</LinearLayout>
 
-    <TextView
-        android:id="@+id/Button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#0000"
-        android:text="写真"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="20sp"
-        app:fontFamily="serif"
-        app:layout_constraintEnd_toEndOf="@+id/camera_button2"
-        app:layout_constraintStart_toStartOf="@+id/camera_button2"
-        app:layout_constraintTop_toBottomOf="@+id/camera_button2"
-        tools:ignore="MissingConstraints" />
+    <TextView android:background="#0000" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/syasin_button" android:id="@+id/Button" app:layout_constraintEnd_toEndOf="@+id/syasin_button" tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/syasin_button" app:fontFamily="serif" android:textSize="20sp" android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textAllCaps="false" android:text="アルバム"/>
+
+    <TextView android:background="#0000" android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/camera_button2" android:id="@+id/Button2" app:layout_constraintEnd_toEndOf="@+id/camera_button2" tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/camera_button2" app:fontFamily="serif" android:textSize="20sp" android:textAppearance="@style/TextAppearance.AppCompat.Large" android:textAllCaps="false" android:text="写真"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

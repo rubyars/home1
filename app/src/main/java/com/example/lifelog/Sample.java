@@ -22,6 +22,7 @@ public class Sample extends AppCompatActivity {
         Button btn5 = (Button) findViewById(R.id.button5);
 
 
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +71,8 @@ public class Sample extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
 
 
